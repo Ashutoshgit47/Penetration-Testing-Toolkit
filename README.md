@@ -26,4 +26,89 @@ A powerful multi-threaded **cybersecurity toolkit** for recon, scanning, and bru
 - Optional (but recommended):
 
 ```bash
-pip install termcolor python-whois paramiko
+pip install termcolor
+pip install python-whois
+pip install paramiko  # optional, for SSH brute
+```
+---
+## 🧑‍💻 How to Run
+
+Save the script to pentest_toolkit.py
+
+Run in terminal:
+
+```bash
+python pentest_toolkit.py
+```
+Follow the interactive menu to scan a domain or IP.
+
+---
+## 📂 Example Usage
+
+## 🔍 WHOIS
+```bash
+
+[~] WHOIS: example.com
+{
+  "domain_name": "EXAMPLE.COM",
+  "registrar": "ICANN",
+  ...
+}
+```
+---
+## 🌐 Subdomain Finder
+
+```bash
+[+] www.example.com
+[+] dev.example.com
+```
+---
+
+## 🔓 Port Scan
+
+```bash
+
+[+] 21/TCP open
+[+] 80/TCP open
+```
+---
+
+## 🚨 Vulnerability Check
+```bash
+
+Possible exposure: FTP on 21
+Possible exposure: HTTP on 80
+```
+---
+
+## 🔐 FTP/SSH  Brute
+
+```bash
+
+[+] admin:123456
+```
+---
+
+## 📝 Notes
+
+All actions are logged to pentest_log.txt
+
+Make sure the target is in your scope and you have permission to test!
+
+SSH brute-forcing requires paramiko, and too many attempts may get you blocked.
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is for educational and authorized penetration testing only.
+Do not use it against systems without explicit permission.
+
+## 📜 License
+
+MIT License
+
+---
+
+## 🤝 Credits
+Built with by Ashutosh Gautam 
