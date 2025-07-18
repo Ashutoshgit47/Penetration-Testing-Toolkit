@@ -38,8 +38,8 @@ Save the script to pentest_toolkit.py
 Run in terminal:
 
 ```bas
-https://github.com/Ashutoshgit47/Penetration-Testing-Toolkit.git
-python pentest_toolkit.py
+git clone https://github.com/Ashutoshgit47/Penetration-Testing-Toolkit.git
+python Penetration-Testing-Toolkit.py
 ```
 Follow the interactive menu to scan a domain or IP.
 
